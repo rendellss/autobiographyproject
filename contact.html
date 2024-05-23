@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        
+        body{
+            background-color: #EFEAD8;
+            margin:0px;
+            padding-bottom: 50px;
+        }
+        .menu{
+            margin:0px;
+        }
+        h1.main{
+            background-color: #5F7161;
+            margin: 0px;
+            padding: 10px;
+            text-align: center;
+            color: bisque;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        h1.main span{
+            background-color: #5F7161;
+            color: bisque;
+            display: inline-block;
+            transition: transform 0.3s ease-in-out;
+        }
+        h1.main span:hover {
+    transform: scale(1.1); 
+        }
+        nav{
+            background-color: #6D8B74 ;
+            height: 25px;
+            padding: 5px;
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 50px;
+        }
+        nav a{
+            background-color: #EFEAD8;
+            color:#5F7161;
+            padding: 0 20px;
+            border-radius: 5rem;
+            margin-left: 15px;
+            transition: 0.4s ease-in-out;
+            text-decoration: none;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+        }
+        nav a:hover{
+            background-color: azure;
+            font-size: 20px;
+            border-radius: 0.5rem;
+            color: #D0C9C0;
+        }
+        .container {
+            padding-top: 15px;
+            width: 60%;
+            margin: auto;
+            overflow: hidden;
+        }
+        #main {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background: #e6ded4;
+            margin-top: 20px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            
+        }
+        form label {
+            margin: 5px 0;
+        }
+        form input, form textarea {
+            padding: 10px;
+            margin: 5px 0 20px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 100%;
+            max-width: 500px;
+            background: #f5eee6;
+        }
+        form button {
+            padding: 10px;
+            border: none;
+            background: #333;
+            color: #e6ded4;
+            cursor: pointer;
+            border-radius: 5px;
+            max-width: 150px;
+        }
+        form button:hover {
+            background: #555555;
+        }
+        .social-icons {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background: #e6ded4;;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .social-icons a {
+            margin: 10px 0;
+            font-size: 24px;
+            color: #333;
+            text-decoration: none;
+        }
+        .social-icons img {
+            width: 55px;
+            height: 55px;
+            transition: 0.2s ease-in-out;
+        }
+        .social-icons a:hover img {
+            filter: brightness(0.8);
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <h1 class="main">
+            <span>Autobiography</span>
+        </h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="aboutme.html">About me</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        </div>
+    <div class="container">
+        <div id="main">
+            <div>
+                <h2>Contact</h2>
+                <p>Contact me by filling out the form below!</p>
+                <form action="/submit_form" method="post">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+            <div class="social-icons">
+               <h2 style="text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+               color: #97938d;"> Follow me on: 
+        </h2>
+                <a href="https://www.facebook.com/rendell.imbang.7" target="_blank"><img src="facebookicon.png" alt="Facebook"></a>
+                <a href="https://x.com/home" target="_blank"><img src="x.png" alt="Twitter"></a>
+                <a href="https://www.youtube.com/@r3n284/featured" target="_blank"><img src="youtubeicon.png" alt="Youtube"></a>
+                <a href="https://www.reddit.com/user/R3ndell/" target="_blank"><img src="reddit.png" alt="Reddit"></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

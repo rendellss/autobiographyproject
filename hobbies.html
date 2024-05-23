@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body{
+            background-color: #EFEAD8;
+            margin:0px;
+            margin-bottom: 50px;
+        }
+        .menu{
+            margin:0px
+        }
+        h1.main{
+            background-color: #5F7161;
+            margin: 0px;
+            padding: 10px;
+            text-align: center;
+            color: bisque;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        h1.main span{
+            background-color: #5F7161;
+            color: bisque;
+            display: inline-block;
+            transition: transform 0.3s ease-in-out;
+        }
+        h1.main span:hover {
+            transform: scale(1.1); 
+        }
+        nav{
+            background-color: #6D8B74;
+            padding: 5px;
+            height: 25px;
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 50px;
+        }
+        nav a{
+            background-color: #EFEAD8;
+            color:#5F7161;
+            padding: 0 20px;
+            border-radius: 5rem;
+            margin-left: 15px;
+            transition: 0.4s ease-in-out;
+            text-decoration: none;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+        }
+        nav a:hover{
+            background-color: azure;
+            font-size: 20px;
+            border-radius: 0.5rem;
+            color: #D0C9C0;
+        }
+        .row{
+            display: flex;
+        }
+        .services {
+            margin-bottom: 20px;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .row {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .icon-container {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            width: 150px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .icon {
+            font-size: 50px;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+        .description {
+            font-size: 1.2em;
+            color: #333;
+        }
+        .container {
+            text-align: center;
+        }
+        .title {
+            margin-bottom: 20px;
+        }
+        .title h1 {
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .row {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            flex-wrap: wrap;
+        }
+        .row2 {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            flex-wrap: wrap;
+        }
+        .col-md-3 {
+            background-color: rgb(241, 241, 227);
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            width: 180px;
+            height: 200px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            transition: 0.7s ease-in-out;
+            color:rgb(206, 182, 139);
+        }
+        .col-md-3:hover{
+            transform: scale(1);
+            padding-top: 25px;
+            padding-bottom: 25px;
+            padding-left: 50px;
+            padding-right: 50px;
+            opacity: 1;
+        }
+        .col-md-3:hover .text {
+            opacity: 1;
+            color:rgb(206, 182, 139);
+            font-size: 22px;
+        }
+        .icon-img {
+            width: 150px;
+            height: 150px;
+            margin-bottom: 0px;
+        }
+        
+
+        
+        h3{
+            text-decoration: none;
+            color: #333;
+            transition: 0.3s ease-in-out;
+            opacity: 0;
+        }
+        p {
+            font-size: 1em;
+            color: #666;
+        }
+        .whitecontainer {
+            background-color: rgb(248, 233, 216);
+            border: 1px solid rgba(218, 204, 189, 0.432);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative; 
+            top: 10px;
+            width: 80%;
+            height: 100%;
+            margin: 20px auto; /* Adjust the top margin as needed */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    <body>
+        <div class="menu">
+            <h1 class="main">
+                <span>Autobiography</span>
+            </h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="aboutme.html">About me</a>
+                <a href="hobbies.html">Hobbies</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+        <div class="container">
+            <div class="Title">
+                <h1 style="color:rgb(202, 181, 153);font-weight: bold;font-family:
+                 'Courier New', Courier, monospace;font-size:45px;">- Hobbies -</h1>
+            </div>
+            <div class="whitecontainer">
+                <div class="row">
+                    <div class="col-md-3 text-center">
+                        <div class="icon">
+                            <img src="movies.png" class="icon-img">
+                        </div>
+                        <h3 class="text">Watching Movies</h3>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <div class="icon">
+                            <img src="keyboardtyping.png" class="icon-img">
+                        </div>
+                        <h3 class="text">Speed Typing</h3>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <div class="icon">
+                            <img src="chess.png"  class="icon-img">
+                        </div>
+                        <h3 class="text">Chess</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="whitecontainer">
+                <div class="row2">
+                    <div class="col-md-3 text-center">
+                        <div class="icon">
+                            <img src="videogame.png" class="icon-img">
+                        </div>
+                        <h3 class="text">Video games</h3>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <div class="icon">
+                            <img src="book.png" class="icon-img">
+                        </div>
+                        <h3 class="text">Reading Books</h3>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <div class="icon">
+                            <img src="cycling.png" class="icon-img">
+                        </div>
+                        <h3 class="text">Cycling</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

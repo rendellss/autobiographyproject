@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body{
+            background-color: #EFEAD8;
+            margin:0px;
+            padding-bottom:  50px;
+        }
+        .menu{
+            margin:0px;
+        }
+        h1.main{
+            background-color: #5F7161;
+            margin: 0px;
+            padding: 10px;
+            text-align: center;
+            color: bisque;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        h1.main span{
+            background-color: #5F7161;
+            color: bisque;
+            display: inline-block;
+            transition: transform 0.3s ease-in-out;
+        }
+        h1.main span:hover {
+    transform: scale(1.1); 
+        }
+        nav{
+            background-color: #6D8B74 ;
+            height: 25px;
+            padding: 5px;
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 50px;
+        }
+        nav a{
+            background-color: #EFEAD8;
+            color:#5F7161;
+            padding: 0 20px;
+            border-radius: 5rem;
+            margin-left: 15px;
+            transition: 0.4s ease-in-out;
+            text-decoration: none;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+        }
+        nav a:hover{
+            background-color: azure;
+            font-size: 20px;
+            border-radius: 0.5rem;
+            color: #D0C9C0;
+        }
+        .whitecontainer {
+        background-color: rgb(248, 233, 216);
+        border: 3px solid rgba(224, 218, 211, 0.432);
+        display: flex;
+        position: relative; 
+        top: 100px;
+        width: 55%;
+        height: 300px;
+        margin: 20px auto; /* Adjust the top margin as needed */
+        transform: scale(1.5); 
+        box-shadow: 0 14px 18px rgba(0, 0, 0, 0.1);
+        border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+	animation: borderRotate var(--d) linear infinite forwards;
+        }
+
+        .centercontainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(vh);
+            width: 100%;
+        }
+        
+        .container {
+            margin: 20px;;
+            display: flex;
+            width: 1000px;
+            height: 90%;
+            gap: 20px;
+        }
+        .container .image {
+            flex: 1;
+            width:200px;
+            max-width: 200px;
+            height:300px;
+            max-height: 270px;
+            background: url(renimage1.png) no-repeat center center;
+            background-size: cover;
+            border-radius: 250px;
+            margin: 0px;
+            filter: grayscale(0.1);
+
+        }
+        .container .text-box {
+            background-color: rgba(238, 228, 216, 0.274);
+            flex: 2;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            border: 5px solid rgba(201, 201, 171, 0.301);
+            line-height: 0;
+            border-radius: 5rem 0rem;
+            
+        }
+        .container .text-box p{
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 17px;
+        }
+        .row{
+            display: flex;
+        }
+        .services {
+            margin-bottom: 20px;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .row {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .icon-container {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            width: 50px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .icon {
+            font-size: 50px;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+        .description {
+            font-size: 1.2em;
+            color: #333;
+        }
+        .container {
+            text-align: center;
+        }
+        .row {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            flex-wrap: wrap;
+        }
+        .row2 {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            flex-wrap: wrap;
+        }
+        .col-md-3 {
+            background-color: rgb(224, 224, 200);
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            width: 80px;
+            height: 80px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            transition: 0.7s ease-in-out;
+        }
+        .col-md-3:hover{
+            transform: scale(1.1);
+            opacity: 1;
+            background-color: rgb(209, 222, 228);
+        }
+        .icon-img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 0px;
+        }
+        
+
+        
+        h3{
+            text-decoration: none;
+            color: #333;
+            transition: 0.3s ease-in-out;
+            opacity: 0;
+        }
+        p {
+            font-size: 1em;
+            color: #666;
+        }
+        .whitecontainer1 {
+            background-color: #5F7161;
+            border: 1px solid rgba(75, 75, 75, 0.432);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative; 
+            top: 250px;
+            width: 60%;
+            height: 100%;
+            margin: 20px auto; /* Adjust the top margin as needed */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+    </style>
+    <body>
+        <div class="menu">
+        <h1 class="main">
+            <span>Autobiography</span>
+        </h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="aboutme.html">About me</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        </div>
+        <div class="whitecontainer">
+        <div class="centercontainer">
+            <div class="container">
+                <div class="text-box">
+                    <h2 style="text-align: center;">Welcome!</h2>
+                    <p style="line-height:1.2"> &nbsp; &nbsp; &nbsp; &nbsp; This is an short Autobiography about myself and my interests.
+                    Feel free to look around and get to know me a little!</p>
+                    <p style="line-height:1.2"> &nbsp; &nbsp; &nbsp; &nbsp;This is also my project for the subject Computer System Fundamentals 2. 
+                        To create a simple website (autobiography) using HTML.</p>
+                    </div>
+                <div class="image"></div>
+            </div>
+        
+    </div>
+    </div>
+        <div class="whitecontainer1">
+            <h2 style="color: #e5e6cc;
+                    font-size: 25px;
+                    background-color: #6D8B74;
+                    padding: 15px 5px;
+                    border-radius: 2rem;
+                    border:3px solid #8b9b8f;"
+            >My Socials</h2>
+            <div class="row">
+                <div class="col-md-3 text-center">
+                    <div class="icon">
+                        <a href="https://www.facebook.com/rendell.imbang.7" target="_blank">  
+                            <img src="facebookicon.png" class="icon-img">
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="icon">
+                        <a href="https://www.youtube.com/@r3n284/featured" target="_blank">  
+                            <img src="youtubeicon.png" class="icon-img">
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="icon">
+                        <a href="https://x.com/home" target="_blank">  
+                            <img src="x.png" class="icon-img">
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="icon">
+                        <a href="https://www.reddit.com/user/R3ndell/" target="_blank">  
+                            <img src="reddit.png" class="icon-img">
+                        </a>
+                    </div>
+                   
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="icon">
+                        <a href="https://discord.gg/yNP8mvJP" target="_blank">  
+                            <img src="discordicon.png" class="icon-img">
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <p> &nbsp;</p>
+        <p> &nbsp;</p>
+        <p> &nbsp;</p>
+        <p> &nbsp;</p>
+        <p> &nbsp;</p>
+        <p> &nbsp;</p>
+
+    </body>
+</html>

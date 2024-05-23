@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body{
+            background-color: #EFEAD8;
+            margin:0px;
+            padding-bottom: 50px;
+        }
+        .menu{
+            margin:0px;
+        }
+        h1.main{
+            background-color: #5F7161;
+            margin: 0px;
+            padding: 10px;
+            text-align: center;
+            color: bisque;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        h1.main span{
+            background-color: #5F7161;
+            color: bisque;
+            display: inline-block;
+            transition: transform 0.3s ease-in-out;
+        }
+        h1.main span:hover {
+    transform: scale(1.1); 
+        }
+        nav{
+            background-color: #6D8B74 ;
+            height: 25px;
+            padding: 5px;
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 50px;
+        }
+        nav a{
+            background-color: #EFEAD8;
+            color:#5F7161;
+            padding: 0 20px;
+            border-radius: 5rem;
+            margin-left: 15px;
+            transition: 0.4s ease-in-out;
+            text-decoration: none;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+        }
+        nav a:hover{
+            background-color: azure;
+            font-size: 20px;
+            border-radius: 0.5rem;
+            color: #D0C9C0;
+        }
+        #title{
+            font-family: 'Courier New', Courier, monospace;
+            color:burlywood;
+            font-size: 40px;
+            text-align: center;
+            font-weight: bolder;
+        }
+       
+        .whitecontainer {
+        background-color: rgb(248, 233, 216);
+        border-radius: 2rem;
+        border: 3px solid rgb(218, 204, 189);
+        display: flex;
+        position: relative; 
+        top: 10px;
+        width: 75%;
+        margin: 20px auto;
+        transition: transform 0.3s ease-in-out;
+        }
+        .whitecontainer:hover {
+            transform: scale(1.2);
+        }
+        .centercontainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(vh);
+            
+            width: 100%;
+        }
+        
+        .container {
+            margin: 20px;;
+            display: flex;
+            width: 1000px;
+            height: 90%;
+            
+        }
+        .container .image {
+            flex: 1;
+            width:200px;
+            max-width: 200px;
+            height:200px;
+            max-height: 200px;
+            background: url(renimage.png) no-repeat center center;
+            background-size: cover;
+            border-radius: 50px;
+            margin: 0px;
+            
+        }
+        .container .text-box {
+            flex: 3;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            line-height: 0;
+        }
+        .container .text-box p{
+            font-size: 20px;
+            line-height: 0.1px;
+        }
+        .whitecontainer2 {
+        background-color: #f2e3d3;
+        border-radius: 2rem;
+        border: 3px solid rgb(218, 204, 189);
+        display: flex;
+        position: relative; 
+        top: 10px;
+        width: 75%;
+        margin: 20px auto;
+        transition: transform 0.3s ease-in-out;
+        }
+        .whitecontainer2:hover {
+        transform: scale(1.2);
+
+        }
+        .centercontainer2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(vh);
+            width: 100%;
+        }
+        .container2 {
+            margin: 20px;;
+            display: flex;
+            width: 1000px;
+            height: 90%;
+        }
+        .container2 .image2 {
+            flex: 1;
+            width:200px;
+            max-width: 200px;
+            height:200px;
+            max-height: 200px;
+            background: url(familypic.png) no-repeat center center;
+            background-size: cover;
+            border-radius: 50px;
+            margin: 0px;
+        }
+        .container2 .text-box2 {
+            flex: 3;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            line-height: 0;
+        }
+        .container2 .text-box2 p{
+            font-size: 20px;
+        }
+        .whitecontainer3 {
+        background-color: #eedfcf;
+        border-radius: 2rem;
+        border: 3px solid rgb(218, 204, 189);
+        display: flex;
+        position: relative; 
+        top: 10px;
+        width: 75%;
+        margin: 20px auto;
+        transition: transform 0.3s ease-in-out;
+        }
+        .whitecontainer3:hover {
+        transform: scale(1.2);
+
+        }
+        .centercontainer3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(vh);
+            width: 100%;
+        }
+        .container3 {
+            margin: 20px;;
+            display: flex;
+            width: 1000px;
+            height: 90%;
+        }
+        .container3 .image3 {
+            flex: 1;
+            width:200px;
+            max-width: 200px;
+            height:200px;
+            max-height: 200px;
+            background: url(skillimage.png) no-repeat center center;
+            background-size: cover;
+            border-radius: 50px;
+            margin: 0px;
+        }
+        .container3 .text-box3 {
+            flex: 3;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            line-height: 0.8px;
+        }
+        .container3 .text-box3 p{
+            font-size: 20px;
+        }
+    </style>
+    <body>
+        <div class="menu">
+        <h1 class="main">
+            <span>Autobiography</span>
+        </h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="aboutme.html">About me</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        </div>
+        <h1 id="title">- About Me -</h1>
+                    
+        <div class=whitecontainer>
+            <div class="centercontainer">
+                <div class="container">
+                    <div class="image"></div>
+                    <div class="text-box">
+                        <h2>Hey there, I'm Rendell Imbang</h2>
+                        <p style="line-height:0.9"> &nbsp; &nbsp; &nbsp; &nbsp; I am a first-year student at Lapu-Lapu 
+                            City College, where I am majoring in computer technology for my Bachelor of Science in 
+                            Industrial Technology. Experiencing new challenges to be able to hone my skills to improve myself. </p>
+
+                            <p style="line-height:0.9"> &nbsp; &nbsp; &nbsp; &nbsp;I was born on January 8, 2005, in
+                                 Lapu-Lapu City. Growing up, I spent most of my time indoors, which has contributed 
+                                 to me being an introvert. Socializing doesn't come easily to me, so I often prefer 
+                                 solitude and quiet moments by wandering around on my own. But being an introvert won't
+                                 stop me from doing my best.
+                            </p>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class=whitecontainer2>
+            <div class="centercontainer2">
+                <div class="container2">
+                    <div class="image2"></div>
+                    <div class="text-box2">
+                        <h1>Family Background</h1>
+                        <p style="line-height:1.2"> &nbsp; &nbsp; &nbsp; &nbsp; I come from a family of five, including my parents and siblings. 
+                            I have an older sister and young brother making me the middle child of the family.
+                        My father is an retired air force soldier and my older sister is an nurse. 
+                        We used to live in Mactan Air Base when my father was still working.
+                    We now currently reside in Marigondon, Pacific Grand Villas. </p>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class=whitecontainer3>
+            <div class="centercontainer3">
+                <div class="container3">
+                    <div class="image3"></div>
+                    <div class="text-box3">
+                        <h1>Skills</h1>
+                        <ul style="line-height:0.8; font-size:25px; font-weight: bolder; display:flex; gap:35px;
+                        color:rgb(99, 97, 94)";>
+                            <li>Typing Speed</il>
+                            <li>Adaptability</li>
+                            <li>Management Skills</li>
+                            <li>Critical Thinking</li>
+                            <li>Flexibility</li>
+                            
+                        </ul>
+                        <ul style="line-height:0.8; font-size:25px; font-weight: bolder; display:flex; gap:35px;
+                        color:rgb(99, 97, 94)";>
+                            <li>Programming Languages </il>
+                            <li>Teamwork</li>
+                            <li>Research</li>
+                            <li>Microsoft Word</li>
+                            <li>Web Development</li>
+                            
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
